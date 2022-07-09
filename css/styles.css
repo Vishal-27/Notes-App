@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/* body{
+  display: grid;
+  justify-content: center;
+} */
+
+/* @media screen and (min-width:600px){
+  .container{
+    width: 80vw;
+     display: grid;
+    justify-content: center;
+  }
+} */
+/* Navbar */
+
+.navbar {
+  background: #020101;
+  color: white;
+  padding: 1rem;
+  display: grid;
+  margin-bottom: 1rem;
+  /* width: 100vw; */
+}
+.navbar-content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.start {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.start h2,
+a {
+  display: none;
+}
+.start span {
+  display: grid;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.end {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+}
+.input-container {
+  display: grid;
+  place-items: center;
+}
+.input-container input {
+  width: 100%;
+}
+.btn-container {
+  padding: 6px;
+  border: solid 1px green;
+  color: green;
+}
+.search-btn {
+  background: transparent;
+  border: none;
+  color: white;
+}
+.btn-container:hover {
+  background: green;
+  cursor: pointer;
+}
+@media screen and (min-width: 515px) {
+  .start span {
+    display: none;
+  }
+  .start h2,
+  a {
+    display: inline;
+  }
+}
+
+/* End of Navbar */
+
+/* Hero section */
+.hero {
+  display: grid;
+}
+.hero h1 {
+  text-align: center;
+  padding: 2px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.add-note {
+  margin: 2rem 0;
+  max-width: 500px;
+  padding: 1rem 2rem;
+  width: 90vw;
+  align-self: center;
+  justify-self: center;
+  -webkit-box-shadow: -1px 4px 15px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: -1px 4px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.note-content {
+  line-height: 5;
+  width: 100%;
+
+  margin-top: 10px;
+  max-height: 9rem;
+  display: block;
+  margin-bottom: 24px;
+}
+.note-btn {
+  color: white;
+  background: rgb(26, 115, 232);
+  border: none;
+  padding: 9px;
+  border-radius: 3px;
+}
+.note-btn:hover {
+  cursor: pointer;
+}
+/* End of hero section */
+
+/* Notes section */
+.notes-section {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.notes-section h1 {
+  font-weight: 500;
+}
+.notes-container {
+  padding: 1rem;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 600px) {
+  .notes-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .notes-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.single-note {
+  padding: 1rem 2rem;
+  border: solid black 1px;
+  display: grid;
+  row-gap: 10px;
+}
+
+/* End of Notes Section */
